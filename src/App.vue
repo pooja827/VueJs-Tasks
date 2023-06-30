@@ -18,6 +18,8 @@ import { RouterLink, RouterView } from 'vue-router'
         <li><RouterLink to="/textarea">Text Count - Computed</RouterLink></li>
         <li><RouterLink to="/textmethod">Text Count-Methods</RouterLink></li>
         <li><RouterLink to="/table">Form</RouterLink></li>
+        <li><RouterLink to="/axiosview">Axios - Display</RouterLink></li>
+        <li><RouterLink to="/axioscreate">Axios - Create</RouterLink></li>
        
         <!-- <li><table-view :formData="formData"></table-view></li>-->
       </ul> 

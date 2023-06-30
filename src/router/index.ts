@@ -32,7 +32,11 @@ const router = createRouter({
     
     { path: '/table', name :'table', 
        component: () => import('../views/Table.vue') },
-    
+
+    { path: '/axiosview', name :'axiosview', 
+       component: () => import('../views/EmployeeTableAxios.vue') },
+    { path: '/createform', name :'createform', 
+       component: () => import('../views/EmpFormView.vue') },
 
 
   ]
