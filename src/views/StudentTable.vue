@@ -66,8 +66,9 @@
       background-color: #7eb387;
     }
   
-    tr:nth-child(even) {
-      background-color: #f9f9f9;
+    tr {
+      background-color: #080808;
+      color:rgb(240, 240, 241)
     }
   
   </style>

@@ -9,7 +9,7 @@
       </div>
   
       <div class="button-container">
-        <button @click="countText">Count Text</button>
+        <button @click="countText" class="submit-button">Count Text</button>
       </div>
   
       <div v-if="showCounts" class="count-container">
@@ -32,8 +32,10 @@
       countText() {
         if (this.myText !== "") {
           this.showCounts = true;
+          
         } else {
           this.showCounts = false;
+          
         }
       },
       getWordCount() {
@@ -64,6 +66,10 @@
           }
         }
         return counts;
+        
+      },
+      reset(){
+        this.myText= "";
       }
     }
   };
@@ -76,12 +82,14 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
+  width: 100vh;
   font-family: Arial, sans-serif;
   text-align: center;
 }
 
 .text-container {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
+
 }
 
 .text-container textarea {
@@ -90,6 +98,8 @@
   padding: 8px;
   border-radius: 4px;
   border: 1px solid #161414;
+  background-color: #65a083;
+  color:cornsilk;
 }
 
 .count-container {
@@ -126,6 +136,19 @@
 @media (min-width: 768px) {
   .text-container {
     margin-bottom: 32px;
+  }
+  .submit-button {
+    background-color: #699ec9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .submit-button:hover {
+    background-color: #75cc6e;
   }
 }
 </style>

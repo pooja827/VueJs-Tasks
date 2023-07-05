@@ -37,8 +37,10 @@ const router = createRouter({
        component: () => import('../views/EmployeeTableAxios.vue') },
     { path: '/createform', name :'createform', 
        component: () => import('../views/EmpFormView.vue') },
-
-
+       { path: '/axiosupdate', name :'axiosupdate', 
+       component: () => import('../views/updateformdemo.vue') },
+       { path: '/employeePortal', name :'employeePortal', 
+       component: () => import('../views/SinglePageApplication.vue') },
   ]
 
   
